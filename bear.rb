@@ -16,4 +16,8 @@ def bear_roar
   return "roar"
 end
 
+def food_count
+  return @stomach.count
+end
+
 end

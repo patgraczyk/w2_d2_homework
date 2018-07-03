@@ -25,14 +25,19 @@ class BearTest < MiniTest::Test
     @bear.put_fish_in_bear(@fish1)
     assert_equal(1, @bear.stomach.length)
   end
-
-  def test_bear_stomach_full
-    @bear.put_fish_in_bear(@fish1)
-    assert_equal(1, @bear.stomach.count)
-  end
+#same test as above
+  # def test_bear_stomach_full
+  #   @bear.put_fish_in_bear(@fish1)
+  #   assert_equal(1, @bear.stomach.count)
+  # end
 
   def test_bear_roar
     assert_equal("roar", @bear.bear_roar)
+  end
+
+  def test_food_count
+    @bear.put_fish_in_bear(@fish1)
+    assert_equal(1, @bear.food_count)
   end
 
 end
