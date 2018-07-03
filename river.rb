@@ -1,10 +1,10 @@
 class River
 
-attr_reader :name
+attr_reader :name, :stock
 
 def initialize (name, stock)
   @name = name
-  @stock = 0
+  @stock = stock
 end
 
 
