@@ -1,12 +1,19 @@
 class Bear
 
-  attr_reader :name, :type
+  attr_reader :name, :type, :stomach
 
-initialize(name, type )
+def initialize(name, type)
   @name = name
   @type = type
   @stomach = []
+end
 
+def put_fish_in_bear(fish)
+  @stomach << fish
+end
+
+def bear_roar
+  return "roar"
 end
 
 end

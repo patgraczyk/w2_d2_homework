@@ -11,6 +11,8 @@ def put_fish_in_river(fish)
   @stock.push(fish)
 end
 
-
+def take_fish_from_river(fish)
+  @stock.delete(fish)
+end
 
 end
