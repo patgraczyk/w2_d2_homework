@@ -10,6 +10,7 @@ class FishTest < MiniTest::Test
     @fish1 = Fish.new("Pawel")
     @fish2 = Fish.new("Colin")
     @fish3 = Fish.new("Alex")
+    @fish =[@fish1, @fish2, @fish3]
   end
 
   def test_fish_present
