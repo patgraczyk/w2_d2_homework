@@ -15,6 +15,7 @@ def take_fish_from_river(fish)
   @stock.delete(fish)
 end
 
+#FIX THIS TO LOOK AT ARRAY FISH
 def count_of_fish()
   @stock.push()
 end
